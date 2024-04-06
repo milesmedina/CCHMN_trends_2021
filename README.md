@@ -30,4 +30,4 @@ Reproduces trend visualizations for a specified analyte (`input.dat$param`) and 
 
 * The first plot displays the monthly-aggregated sample data and the GAM fit.
 * The second plot displays the annual mean (with 95% CI) and the trend for 2017-2021 (with 95% CI). For TN, TP, and chlorophyll, the plot displays the corresponding threshold as a dotted line.
-* The third plot displays the estimated trend slope over a sliding 5-year window (right-handed).
+* The third plot displays the estimated trend slopes (with 95% CI) over a sliding 5-year window (right-handed).
