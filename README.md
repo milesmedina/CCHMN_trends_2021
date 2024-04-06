@@ -1,6 +1,7 @@
 # CCHMN_trends_2021
 
 input.dat.RData contains input data for the trend analysis. Columns:
+===============
 
   date:			sample date (YYYY-MM-DD)
   
@@ -22,8 +23,8 @@ input.dat.RData contains input data for the trend analysis. Columns:
 
   mo:			month (integer)
 
-
 thresholds.csv contains selected thresholds for nitrogen, phosphorus, and chlorophyll. Columns:
+==============
 
   Stratum:			CCHMN stratum name
 
@@ -33,11 +34,11 @@ thresholds.csv contains selected thresholds for nitrogen, phosphorus, and chloro
 
   Chlorophyll a:		threshold value (ug/L)
 
-
 trends.R reproduces trend results for a specified analyte (input.dat$param) and stratum (input.dat$station):
+========
 
   The first plot displays the monthly-aggregated sample data and the GAM fit.
 
-  The second plot displays the annual mean (with 95% CI) and the trend for 2017-2021. For TN, TP, and chlorophyll, the plot displays the corresponding threshold as a dotted line.
+  The second plot displays the annual mean (with 95% CI) and the trend for 2017-2021 (with 95% CI). For TN, TP, and chlorophyll, the plot displays the corresponding threshold as a dotted line.
 
   The third plot displays the estimated trend slope over a sliding 5-year window (right-handed).
