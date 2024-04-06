@@ -2,35 +2,35 @@
 
 input.dat.RData contains input data for the trend analysis. Columns:
 
-  date			sample date (YYYY-MM-DD)
+  date:			sample date (YYYY-MM-DD)
   
-  station		CCHMN stratum name
+  station:		CCHMN stratum name
 
-  param			water quality parameter
+  param:			water quality parameter
 
-  value			reported sample value
+  value:			reported sample value
 
-  unit			measurement unit
+  unit:			measurement unit
 
-  depth			sampling depth
+  depth:			sampling depth
 
-  doy			day of year (integer)
+  doy:			day of year (integer)
 
-  cont_year		decimal year
+  cont_year:		decimal year
 
-  yr			year (integer)
+  yr:			year (integer)
 
-  mo			month (integer)
+  mo:			month (integer)
 
 thresholds.csv contains selected thresholds for nitrogen, phosphorus, and chlorophyll. Columns:
 
-  Stratum			CCHMN stratum name
+  Stratum:			CCHMN stratum name
 
-  Phosphorus, TP	threshold value (mg/L)
+  Phosphorus, TP:	threshold value (mg/L)
 
-  Nitrogen, TN		threshold value (mg/L)
+  Nitrogen, TN:		threshold value (mg/L)
 
-  Chlorophyll a		threshold value (ug/L)
+  Chlorophyll a:		threshold value (ug/L)
 
 trends.R reproduces trend results for a specified analyte (input.dat$param) and stratum (input.dat$station):
 
