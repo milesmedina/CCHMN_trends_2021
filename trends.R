@@ -15,10 +15,8 @@ load("input.dat.RData")
 thresholds <- read.csv("thresholds.csv",check.names=FALSE)
 
 # Select analyte and stratum
-  # params   <- input.dat$param |> unique() |> sort() |> as.character()
-  # stations <- input.dat$station |> unique() |> sort() |> as.character()
-  # params
-  # stations
+input.dat$param |> levels()
+input.dat$station |> levels()
 analyte <- "Nitrogen, TN"
 stratum <- "Tidal Caloosahatchee River"
 
@@ -62,6 +60,6 @@ if( analyte %in% c("Nitrogen, TN","Phosphorus, TP","Chlorophyll a") ){
   p2
 }
 
-# 5-year trends over sliding window
+# Trend slopes over sliding 5-year window
 show_trndseason( mod, justify = "right", win = 5, doyend = 365,
                  ylab = unique(subdat2$unit) )
