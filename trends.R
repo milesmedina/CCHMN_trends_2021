@@ -7,10 +7,10 @@ if(!require(wqtrends)) { install.packages('wqtrends',
 if(!require(dplyr)) { install.packages('dplyr') }; library(dplyr)
 if(!require(lubridate)) { install.packages('lubridate') }; library(lubridate)
 if(!require(mixmeta)) { install.packages('mixmeta') }; library(mixmeta)
+if(!require(mgcv)) { install.packages('mgcv') }; library(mgcv)
 
 
 # Load CCHMN data and thresholds
-setwd( "C:\\Users\\miles\\Documents\\GitHub\\CCHMN_trends_2021" )
 load("input.dat.RData")
 thresholds <- read.csv("thresholds.csv",check.names=FALSE)
 
@@ -19,8 +19,8 @@ thresholds <- read.csv("thresholds.csv",check.names=FALSE)
   # stations <- input.dat$station |> unique() |> sort() |> as.character()
   # params
   # stations
-analyte <- "Phosphorus, TP" #"Nitrogen, TN"
-stratum <- "Tidal Peace River"
+analyte <- "Nitrogen, TN"
+stratum <- "Tidal Caloosahatchee River"
 
 # Specify analytes to log-transform
 logvars <- c( "BOD", "Carbon, TOC", "Chlorophyll a", "Color, apparent",  
