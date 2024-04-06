@@ -22,6 +22,7 @@ input.dat.RData contains input data for the trend analysis. Columns:
 
   mo:			month (integer)
 
+
 thresholds.csv contains selected thresholds for nitrogen, phosphorus, and chlorophyll. Columns:
 
   Stratum:			CCHMN stratum name
@@ -31,6 +32,7 @@ thresholds.csv contains selected thresholds for nitrogen, phosphorus, and chloro
   Nitrogen, TN:		threshold value (mg/L)
 
   Chlorophyll a:		threshold value (ug/L)
+
 
 trends.R reproduces trend results for a specified analyte (input.dat$param) and stratum (input.dat$station):
 
