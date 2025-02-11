@@ -8,6 +8,7 @@ if(!require(dplyr)) { install.packages('dplyr') }; library(dplyr)
 if(!require(lubridate)) { install.packages('lubridate') }; library(lubridate)
 if(!require(mixmeta)) { install.packages('mixmeta') }; library(mixmeta)
 if(!require(mgcv)) { install.packages('mgcv') }; library(mgcv)
+if(!require(ggplot2)) { install.packages('ggplot2') }; library(ggplot2)
 
 
 # Load CCHMN data and thresholds
@@ -21,7 +22,7 @@ analyte <- "Nitrogen, TN"
 stratum <- "Tidal Caloosahatchee River"
 
 # Specify analytes to log-transform
-logvars <- c( "BOD", "Carbon, TOC", "Chlorophyll a", "Color, apparent",  
+logvars <- c( "Chlorophyll a",
               "Nitrogen, NHx-N", "Nitrogen, NOx-N", "Nitrogen, TKN", "Nitrogen, TN",
               "Phosphorus, PO4-P", "Phosphorus, TP" )
 if( analyte %in% logvars ){
