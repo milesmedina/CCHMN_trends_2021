@@ -1,6 +1,6 @@
 # CCHMN_trends_2021
 
-This repo contains input data, code and supplemental visualizations for Medina et al. (2024): "Water quality trend analysis for the Greater Charlotte Harbor estuaries in southwest Florida, 2000–2021"
+This repo contains input data, code and supplemental visualizations for Medina et al. (2025): "Water Quality Trends and Eutrophication Indicators in a Large Subtropical Estuary: A case study of the Greater Charlotte Harbor System in Southwest Florida."
 
 ## input.dat.RData
 
